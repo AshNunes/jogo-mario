@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Configurações básicas do documento -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título da página -->
+    <title>Jogo</title>
+    <!-- Ícone da página -->
+    <link
+      rel="shortcut icon"
+      href="assets/imgs/Mario-ico.ico"
+      type="image/x-icon"
+    />
+    <!-- Estilos CSS para a página -->
+    <link rel="stylesheet" href="estilo.css" />
+  
+  </head>
+  <body>
+    
+    
+    <!-- Container principal para o jogo -->
+    <div class="tabuleiro">
+      <!-- Pontuacao -->
+      <div class="pontuacao" id="pontuacao">Pontuação por metro: <span id="pts">0</span></div>
+      <!-- Imagem de nuvens no fundo -->
+      <img src="assets/imgs/nuvens.png" class="nuvem" />
+      <!-- Imagem do personagem Mario -->
+      
+      <img id="player" src="assets/imgs/mario.gif" class="mario" />
+      
+      <!-- Imagem do cano no jogo -->
+      <img id="enemy" src="assets/imgs/cano.png" class="cano" />
+    </div>
+    
+      <!-- Botão para reiniciar o jogo -->
+      <button onClick="resete()" class="reiniciar">REINICIAR</button>
+      <script src="./js/script.js" defer></script>
+    </body>
+    </html>
